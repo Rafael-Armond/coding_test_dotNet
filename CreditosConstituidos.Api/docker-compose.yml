@@ -1,0 +1,28 @@
+﻿services:
+  db:
+    image: postgres:16
+    container_name: creditos-db
+    environment:
+      POSTGRES_USER: creditos
+      POSTGRES_PASSWORD: creditos
+      POSTGRES_DB: creditosdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  api:
+    build:
+      context: .          
+      dockerfile: Dockerfile  
+    container_name: creditos-api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Host=db;Port=5432;Database=test_db;Username=creditos;Password=creditos"
+    depends_on:
+      - db
+    ports:
+      - "5000:80"
+
+volumes:
+  pgdata:
