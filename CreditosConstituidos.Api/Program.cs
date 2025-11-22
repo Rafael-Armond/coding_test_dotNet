@@ -1,4 +1,13 @@
+using CreditosConstituidos.Infrastructure;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Configurando o PostgresSQL
+builder.Services.AddDbContext<CreditoDbContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 
 // Add services to the container.
 
