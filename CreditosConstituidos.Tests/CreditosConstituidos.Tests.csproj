@@ -8,4 +8,14 @@
     <UseVSTest>true</UseVSTest>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.36" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CreditosConstituidos.Application\CreditosConstituidos.Application.csproj" />
+    <ProjectReference Include="..\CreditosConstituidos.Domain\CreditosConstituidos.Domain.csproj" />
+    <ProjectReference Include="..\CreditosConstituidos.Infrastructure\CreditosConstituidos.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

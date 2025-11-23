@@ -16,7 +16,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CreditosConstituidos.Application\CreditosConstituidos.Application.csproj" />
     <ProjectReference Include="..\CreditosConstituidos.Domain\CreditosConstituidos.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Messaging\" />
+    <Folder Include="Persistence\" />
   </ItemGroup>
 
 </Project>
