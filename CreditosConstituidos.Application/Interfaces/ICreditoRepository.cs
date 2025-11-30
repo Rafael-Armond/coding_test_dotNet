@@ -1,4 +1,4 @@
-﻿using CreditosConstituidos.Api.Domain;
+﻿using CreditosConstituidos.Domain.Entities;
 
 namespace CreditosConstituidos.Application.Interfaces
 {
