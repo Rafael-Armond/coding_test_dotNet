@@ -1,4 +1,4 @@
-﻿using CreditosConstituidos.Api.Domain;
+﻿using CreditosConstituidos.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace CreditosConstituidos.Infrastructure

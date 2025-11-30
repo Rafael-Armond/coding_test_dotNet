@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace CreditosConstituidos.Api.Domain
+namespace CreditosConstituidos.Domain.Entities
 {
     [Table("credito")]
     public class Credito
